@@ -10,6 +10,8 @@ env:
   MONGODB_DB_NAME: gha-demo
 jobs:
   test:
+    container:
+      image: node:16   # the job steps runs inside the container node:16 and they don't have direct access to ubuntu-latest
     environment: testing
     runs-on: ubuntu-latest
     env:
