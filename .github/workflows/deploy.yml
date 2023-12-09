@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb+srv   
-      MONGODB_CLUSTER_ADDRESS: cluster0.bm3zxvc.mongodb.net
+      MONGODB_CLUSTER_ADDRESS: karthikdb.8nxqmtc.mongodb.net
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
       MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
@@ -34,7 +34,7 @@ jobs:
         run: npm test
       - name: Output information
         run: |
-          echo "MONGODB_USERNAME: $MONGODB_USERNAME"
+          echo "MONGODB_USERNAME: $MONGODB_USERNAM2E"
   deploy:
     needs: test
     runs-on: ubuntu-latest
